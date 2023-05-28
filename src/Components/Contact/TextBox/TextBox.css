@@ -1,0 +1,168 @@
+.TextContainer {
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    width: 70vh;
+    background-color: rgb(46, 44, 44);
+    z-index: 100;
+    border: solid 5px white;
+    border-radius: 10%;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: 1s;
+}
+
+.showContactForm{
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.ContactHeader {
+    text-align: center;
+    font-size: 35px;
+    margin: 10px;
+    color: white;
+    font-family: 'Delicious Handrawn', cursive;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.ContactLabel {
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: lighter;
+    color: white;
+    font-family: 'Delicious Handrawn', cursive;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Kalam', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+
+.Name,
+.Email,
+.Message {
+    margin: 20px;
+    padding: 10px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: 'Delicious Handrawn', cursive;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Kalam', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.Message{
+    width: 70%;
+    background-color: transparent;
+    color: white;
+    resize: none;
+    border: solid 2px black;
+    transition: 0.5s;
+}
+
+.Name, .Email{
+    background-color: transparent;
+    color: white;
+    border: solid 1.8px;
+    border-color: transparent transparent black transparent;
+    transition: 0.5s;
+    width: 50%;
+}
+
+.Name:focus, .Email:focus{
+    outline: none;
+    border-color: transparent transparent white transparent;
+}
+
+.Message:focus{
+    outline: none;
+    border-color: white;
+}
+
+.ContactSubmit{
+    float: right;
+    margin: 10px;
+    margin-right: 80px;
+    height: 50px;
+    width: 150px;
+    font-family: 'Delicious Handrawn', cursive;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Kalam', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    background-color: black;
+    border: solid 2px white;
+    color: white;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.ContactSubmit:hover{
+    background-color: white;
+    color: black;
+}
+
+.ContactSubmit:focus{
+    outline: none;
+}
+
+@media (max-width:1000px){
+    .TextContainer{
+        top: 10%;
+        height: 6vh;
+        width: 70%;
+        left: cal(50%-width/2);
+        transition: 1s;
+    }
+    .showTextContainer{
+        height: 60vh;
+    }
+    .Name, .Email{
+        width: 70%;
+    }
+    .ContactHeader{
+        font-size: 30px;
+        cursor: none;
+    }
+    .Name, .Email, .Message{
+        margin: 10px;
+    }
+    .MobileBox{
+        height: 0%;
+        opacity: 0;
+        transition: height 0.5s ease, opacity 2s ease;
+    }
+    .showMobileBox{
+        height: auto;
+        opacity: 1;
+        display: block;
+    }
+
+    .Down{
+        position: absolute;
+        height: 0px;
+        width: 0px;
+        border-right: 20px solid transparent;
+        border-left: 20px solid transparent;
+        border-top: 20px solid white;
+        transition: border 1s ease-in-out;
+    }
+
+    .Down-left{
+        top: 40px;
+        left: 20px;
+    }
+
+    .Down-right{
+        top: 40px;
+        right: 20px;
+    }
+
+    .HideDown{
+        border: none;
+    }
+}

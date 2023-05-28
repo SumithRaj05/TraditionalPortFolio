@@ -1,0 +1,64 @@
+.SkillsSection {
+    height: 100vh;
+    background: black;
+}
+
+.Containers{
+    display: flex;
+}
+
+.SkillsHeader {
+    position: relative;
+    top: 80px;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    font-family: 'Delicious Handrawn', cursive;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.SkillsHeader::after{
+    position: relative;
+    content: '';
+    height: 1px;
+    width: 5%;
+    left: 49%;
+    margin-top: 25px;
+    display: grid;
+    background: white;
+}
+
+.SkillsContainer1, .SkillsContainer2{
+    margin-top: 140px;
+    width: 50%;
+}
+
+.SkillsContainer1{
+    padding-left: 20%;
+}
+
+@media (max-width: 1000px){
+    .SkillsHeader{
+        text-align: left;
+        margin-left: 20px;
+    }
+    .SkillsHeader::after{
+        height: 0px;
+    }
+    .Containers{
+        display: block;
+    }
+    .SkillsContainer1, .SkillsContainer2{
+        width: 100%;
+    }
+    .SkillsContainer1{
+        padding: 0%;
+    }
+    .SkillsContainer2{
+        padding-bottom: 30px;
+        margin-top: 0px;
+    }
+    .SkillsSection{
+        height: auto;
+    }
+}

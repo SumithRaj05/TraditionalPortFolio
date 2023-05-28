@@ -1,0 +1,80 @@
+.parallax {
+  height: 100vh;
+  overflow: hidden; 
+  position: relative;
+}
+
+.parallax-bg {
+  background-image: url(layer2.jpg);
+  background-position: center;
+  filter: brightness(60%);
+  background-size: cover;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -10;
+}
+
+.parallax-mid{
+  background-image: url(midlayer.png);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  position: absolute;
+  left: 0%;
+  top: 0;
+  width: 100%;
+  transition: transform 0.5s ease-out;
+  animation-name: glow;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+}
+
+.parallax-top {
+  position: fixed;
+  background-image: url(layer1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* top: 0; */
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-out;
+  z-index: 10;
+}
+
+.homeHeader{
+  color: white;
+  margin-top: 15%;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Tsukimi Rounded', sans-serif;
+  cursor: default;
+}
+
+@media (max-width: 900px) {
+  .homeHeader{
+    margin-top: 5%;
+    margin-left: 8%;
+    font-size: 30px;
+  }
+  .parallax-bg, .parallax-mid, .parallax-top{
+    background-size: 100% 100%;
+    height: 100%;
+    width: 140%;
+    left: -25%;
+  }
+  .parallax-top{
+    bottom: 0%;
+    height: 70%;
+  }
+}
+
+@keyframes glow {
+  0%{filter: brightness(50%)}
+  50%{filter: brightness(70%)}
+  100%{filter: brightness(50%)}
+}

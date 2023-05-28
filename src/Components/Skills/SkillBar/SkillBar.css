@@ -1,0 +1,32 @@
+.SkillLine {
+    margin: 30px;
+    background: transparent;
+    display: flex;
+}
+
+.point1,
+.point2,
+.point3,
+.point4,
+.point5 {
+    background-color: grey;
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+    border: 0px solid transparent;
+    border-radius: 50%;
+    transition: all 1.5s ease;
+}
+
+.skillFont {
+    font-size: 22px;
+    margin-left: 20px;
+    color: white;
+    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Tsukimi Rounded', sans-serif;
+    letter-spacing: 2px;
+}
+
+.active {
+    background-color: yellow;
+}

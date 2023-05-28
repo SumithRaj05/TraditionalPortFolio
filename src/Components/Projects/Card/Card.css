@@ -1,0 +1,54 @@
+.card {
+    position: relative;
+    margin-right: 80px;
+    flex: 0 0 auto;
+    background-color: #ffdd8a;
+    border: solid 5px #ffbe19;
+    border-radius: 10px;
+    scroll-snap-align: center;
+    transition: height 0.2s ease-in-out, width 0.2s ease-in-out, opacity 0.2s ease;
+    padding: 10px;
+}
+
+.CardHeader{
+    margin: 6px;
+    margin-bottom: 10px;
+    transition: font-size 0.2s ease-in-out;
+    font-family: 'Delicious Handrawn', cursive;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.CardDesc{
+    margin-top: 10px;
+    transition: font-size 0.2s ease-in-out;
+    font-family: 'Delicious Handrawn', cursive;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Kalam', cursive;
+}
+
+.GitLogo, .DemoLogo{
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+}
+
+.GitLogo{
+    bottom: 20px;
+    left: 20px;
+}
+
+.DemoLogo{
+    bottom: 20px;
+    left: 65px;
+}
+
+.GitLogo:hover, .DemoLogo:hover{
+    filter: brightness(0.9) invert(0.7) sepia(0.5) hue-rotate(100deg) saturate(200%) contrast(40%);
+}
+
+@media (max-width: 1000px){
+    .card{
+        margin-right: 100px;
+    }
+}

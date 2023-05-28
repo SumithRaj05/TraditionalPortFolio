@@ -1,0 +1,104 @@
+.ContactSection {
+    height: 100vh;
+    background-image: url(bg.jpg);
+    background-size: 50% 100%;
+    background-position-x: left;
+    background-repeat: no-repeat;
+    filter: brightness(80%);
+    overflow: hidden;
+    background-color: black;
+}
+
+.KrishnaLayer {
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.LotusImage1,
+.LotusImage2 {
+    position: absolute;
+    top: 0%;
+    height: 100%;
+    width: 50%;
+    filter: brightness(125%);
+    animation-name: glowLotus;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    opacity: 0;
+    transition: 2.5s;
+    translate: 0% 50%;
+}
+
+.LotusImage1 {
+    left: 0%;
+}
+
+.LotusImage2 {
+    right: 0%;
+    transform: rotateY(180deg);
+}
+
+.KrishnaImage,
+.WaterImage {
+    height: 100%;
+    width: 50%;
+}
+
+.KrishnaImage {
+    opacity: 0;
+    transform: translateY(-50%);
+    filter: brightness(130%);
+    transition: 2s;
+}
+
+.WaterImage {
+    transform: rotateY(180deg);
+    filter: brightness(100%);
+}
+
+.KrishnaAnimate {
+    opacity: 1;
+    transform: translate(0%);
+}
+
+.LotusImageAnimate {
+    opacity: 1;
+    translate: 0%;
+}
+
+@keyframes glowLotus {
+    0% {
+        filter: brightness(100%)
+    }
+
+    50% {
+        filter: brightness(130%)
+    }
+
+    100% {
+        filter: brightness(100%)
+    }
+}
+
+@media (max-width: 1000px) {
+    .ContactSection {
+        background-size: 120% 100%;
+        background-position: center;
+    }
+
+    .LotusImage2,
+    .WaterImage {
+        display: none;
+    }
+
+    .KrishnaImage,
+    .LotusImage1 {
+        position: absolute;
+        top: 2%;
+        left: -12%;
+        width: 125%;
+    }
+}

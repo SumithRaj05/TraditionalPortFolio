@@ -1,0 +1,116 @@
+.ProjectsSection {
+    height: 100vh;
+    background: black;
+    padding-top: 10px;
+    position: relative;
+}
+
+.ProjectHeader {
+    font-size: 40px;
+    margin-top: 8%;
+    margin-bottom: 50px;
+    text-align: center;
+    color: white;
+    font-family: 'Delicious Handrawn', cursive;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.ProjectHeader::after{
+    position: relative;
+    content: '';
+    height: 1px;
+    width: 5%;
+    left: 49%;
+    margin-top: 20px;
+    display: grid;
+    background: white;
+}
+
+.horizontal-scroll-container {
+    margin-top: 6%;
+    opacity: 0;
+    transition: all 1s;
+    transform: translateX(50%);
+    height: 400px;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    width: 50%;
+    scroll-snap-type: x mandatory;
+    padding-left: 50%;
+    background-color: transparent;
+    display: flex;
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.horizontal-scroll-container::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.content {
+    display: flex;
+}
+
+.spacer {
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.ProjectIcons {
+    margin-right: 15px;
+    height: 45px;
+    width: 45px;
+}
+
+.LeftNavigator, .RightNavigator{
+    position: absolute;
+    top: 35%;
+    height: 350px;
+    width: 50px;
+    background-color: rgb(88, 88, 88);
+    cursor: pointer;
+    z-index: 80;
+}
+
+.LeftNavigator{
+    left: 0%;
+}
+
+.RightNavigator{
+    right: 0%;
+}
+
+.rightArrow, .leftArrow{
+    position: absolute;
+    top: 50%;
+    left:25%;
+    color: white;
+    font-weight: 1000;
+    font-size: 30px;
+}
+
+@media (max-width: 1000px) {
+    .LeftNavigator, .RightNavigator{
+        width: 30px;
+        top: 30%;
+    }
+
+    .horizontal-scroll-container {
+        transform: translate(0%);
+        scroll-behavior: none;
+    }
+    .ProjectHeader{
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 90px;
+    }
+    .ProjectHeader::after{
+        height: 0px;
+    }
+}

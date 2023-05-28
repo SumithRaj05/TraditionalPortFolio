@@ -1,0 +1,129 @@
+.ScrollContainer {
+    position: relative;
+    height: 45vh;
+    width: 140px;
+    background-color: #ffdd8a;
+    text-overflow: ellipsis;
+    display: flex;
+    margin: auto;
+    margin-top: 300px;
+    border: solid;
+    border-color: #FFD700 transparent #FFD700 transparent;
+    border-width: 15px 0px 15px 0px;
+    transition: width 2s ease;
+    z-index: 5;
+}
+
+.ScrollContainer.open {
+    width: 70%;
+}
+
+.Edge {
+    position: relative;
+    visibility: visible;
+    margin-top: -5vh;
+    height: 55vh;
+    width: 70px;
+    background-color: #ffce52;
+    border: solid 10px;
+    border-color: #ffbe19 #ffbe19 transparent transparent;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+.ScrollLeft {
+    margin-right: auto;
+}
+
+.ScrollRight {
+    margin-left: auto;
+}
+
+.ScrollContent {
+    position: absolute;
+    font-family: 'Delicious Handrawn', cursive;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Kalam', cursive;
+    font-size: 22px;
+    font-weight: 560;
+    cursor: default;
+}
+
+.ContentBox {
+    position: absolute;
+    width: 70%;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis
+}
+
+.TopStick {
+    position: relative;
+    top: -90px;
+    border-radius: 0% 100% 100% 100%;
+    transform: rotate(45deg);
+}
+
+.BottomStick {
+    position: absolute;
+    bottom: -90px;
+    border-radius: 100% 100% 100% 0%;
+    transform: rotate(-45deg);
+}
+
+.Stick {
+    left: 0;
+    height: 80px;
+    width: 80px;
+    background-color: #A52A2A;
+    border: solid 1px transparent;
+}
+
+@media (max-width: 800px) {
+    .ScrollContainer{
+        margin-top: 50%;
+        height: 40vh;
+    }
+
+    .ContentBox {
+        overflow: scroll;
+    }
+
+    .ScrollContent {
+        font-size: 18px;
+    }
+
+    .Edge {
+        width: 45px;
+        height: 50vh;
+    }
+
+    .Stick {
+        height: 50px;
+        width: 50px;
+    }
+
+    .TopStick {
+        top: -60px;
+    }
+
+    .BottomStick {
+        bottom: -60px;
+    }
+
+    .ContentBox {
+        width: 60%;
+    }
+
+    .ScrollContainer.open {
+        width: 90%;
+    }
+
+    .ContentBox::-webkit-scrollbar {
+        display: none;
+    }
+}
