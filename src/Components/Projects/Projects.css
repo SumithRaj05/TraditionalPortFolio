@@ -1,5 +1,6 @@
 .ProjectsSection {
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     background: black;
     padding-top: 10px;
     position: relative;
