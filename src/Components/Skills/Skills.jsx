@@ -43,6 +43,10 @@ export default function Skills() {
                         Points={3}
                         Skill="GIMP"
                     />
+                    <SkillBar
+                        Points={3}
+                        Skill="Git"
+                    />
                 </div>
                 <div className="SkillsContainer2">
                     <SkillBar
