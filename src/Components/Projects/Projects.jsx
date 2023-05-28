@@ -169,8 +169,8 @@ export default function Projects() {
                             </React.Fragment>
                         }
                         demo={true}
-                        GitLink=""
-                        DemoLink=""
+                        GitLink="https://github.com/SumithRaj05/PortFolio"
+                        DemoLink="https://sumithraj-portfolio.netlify.app/"
                         isActive={middleCard === 3}
                     />
                     <div className="spacer"></div>
