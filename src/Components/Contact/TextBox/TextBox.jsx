@@ -14,7 +14,7 @@ export default function TextBox() {
             .then((result) => {
                 alert("Email Sent")
             }, (error) => {
-                console.log(error.text);
+                alert("invalid email")
             });
     }
 

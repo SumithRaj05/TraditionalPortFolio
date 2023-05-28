@@ -1,8 +1,10 @@
 .AboutSection {
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     background: black;
     margin: auto;
     display: flex;
+    padding-bottom: 100px;
 }
 
 .AboutHeader {
