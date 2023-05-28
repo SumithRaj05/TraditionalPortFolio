@@ -8,11 +8,7 @@ export default function DesktopTextBox(props) {
 
     const DataHandler = (e) => {
         e.preventDefault();
-        props.UserData({
-            name: name,
-            email: email,
-            message: message
-        })
+        props.UserData({target: e.target})
         setName("");
         setEmail("");
         setMessage("");
@@ -40,6 +36,7 @@ export default function DesktopTextBox(props) {
             <label className="ContactLabel">Name</label>
             <input
                 className="Name"
+                name="name"
                 placeholder="Enter your Name"
                 type="text"
                 maxLength={50}
@@ -50,6 +47,7 @@ export default function DesktopTextBox(props) {
             <label className="ContactLabel">Email</label>
             <input
                 className="Email"
+                name="email"
                 placeholder="Enter your Email"
                 type="email"
                 maxLength={50}
@@ -60,6 +58,7 @@ export default function DesktopTextBox(props) {
             <label className="ContactLabel">Message</label><br />
             <textarea
                 className="Message"
+                name="message"
                 placeholder="Enter your message here"
                 rows={5}
                 maxLength={500}

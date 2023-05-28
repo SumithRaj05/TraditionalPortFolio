@@ -1,7 +1,27 @@
 import "./Skills.css";
 import SkillBar from "./SkillBar/SkillBar";
+import { useEffect } from "react";
 
 export default function Skills() {
+
+    useEffect(() => {
+        const Container = document.querySelector(".Containers");
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if(entry.isIntersecting){
+                    entry.target.classList.add("showSkills")
+                }else{
+                    entry.target.classList.remove("showSkills")
+                }
+            })
+        })
+
+        observer.observe(Container);
+
+        return () => observer.unobserve(Container)
+    },[])
+
     return (
         <section className="SkillsSection" id="Skills">
             <h3 className="SkillsHeader">My Skills</h3>
