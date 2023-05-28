@@ -16,6 +16,7 @@ export default function NavBar() {
         for (let i = 0; i < anchor.length; i++) {
             anchor[i].addEventListener('click', () => {
                 nav.style.width = "0px";
+                navIcon.innerHTML = "&#9776;";
             })
         }
     }

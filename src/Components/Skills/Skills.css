@@ -55,6 +55,7 @@
     }
     .Containers{
         display: block;
+        translate: 0% 20%;
     }
     .SkillsContainer1, .SkillsContainer2{
         width: 100%;
