@@ -6,7 +6,7 @@
     text-overflow: ellipsis;
     display: flex;
     margin: auto;
-    margin-top: 300px;
+    margin-top: 150px;
     border: solid;
     border-color: #FFD700 transparent #FFD700 transparent;
     border-width: 15px 0px 15px 0px;
@@ -90,7 +90,6 @@
 
 @media (max-width: 800px) {
     .ScrollContainer{
-        margin-top: 50%;
         height: 40vh;
     }
 

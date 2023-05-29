@@ -63,10 +63,10 @@ a {
 }
 
 .NavIcon {
-  margin-top: -5px;
+  margin-top: 10px;
   margin-left: 10%;
-  height: 60px;
-  width: 100px;
+  height: 40px;
+  width: 70px;
   cursor: pointer;
 }
 

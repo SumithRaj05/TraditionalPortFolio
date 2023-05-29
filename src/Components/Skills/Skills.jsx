@@ -65,6 +65,10 @@ export default function Skills() {
                         Points={3}
                         Skill="Node js"
                     />
+                    <SkillBar
+                        Points={3}
+                        Skill="Linux"
+                    />
                 </div>
             </div>
         </section>

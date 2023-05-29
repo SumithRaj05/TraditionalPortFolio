@@ -11,7 +11,7 @@ export default function Scroll() {
         const handleListener = () => {
             setScrollY(Math.round((window.scrollY * 100) / scrollHeight));
             if (contentElement) {
-                if (scrollY >= 20 && scrollY <= 40) {
+                if (scrollY >= 15 && scrollY <= 40) {
                     setTimeout(() => {
                         setContent(
                             <React.Fragment>
