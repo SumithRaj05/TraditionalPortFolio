@@ -6,7 +6,7 @@
     background-color: rgb(46, 44, 44);
     z-index: 100;
     border: solid 5px white;
-    border-radius: 10%;
+    border-radius: 30px;
     padding: 20px;
     opacity: 0;
     transform: translateY(50%);
@@ -116,7 +116,7 @@
         height: 6vh;
         width: 70%;
         left: cal(50%-width/2);
-        transition: 1s;
+        transition: 0.5s;
     }
     .showTextContainer{
         height: 60vh;
@@ -126,15 +126,16 @@
     }
     .ContactHeader{
         font-size: 30px;
-        cursor: none;
+        cursor: pointer;
     }
     .Name, .Email, .Message{
         margin: 10px;
     }
     .MobileBox{
         height: 0%;
+        display: none;
         opacity: 0;
-        transition: height 0.5s ease, opacity 2s ease;
+        transition: height 1s ease, opacity 2s ease;
     }
     .showMobileBox{
         height: auto;

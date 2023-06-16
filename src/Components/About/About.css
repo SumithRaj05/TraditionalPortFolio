@@ -1,7 +1,6 @@
 .AboutSection {
     min-height: 100vh;
     height: auto;
-    background: black;
     padding-top: 10px;
     padding-bottom: 50px;
     position: relative;
@@ -9,7 +8,7 @@
 
 .AboutHeader {
     font-size: 40px;
-    margin-top: 8%;
+    margin-top: 5%;
     margin-bottom: 50px;
     text-align: center;
     color: white;

@@ -1,7 +1,6 @@
 .ProjectsSection {
     min-height: 100vh;
     height: auto;
-    background: black;
     padding-top: 10px;
     position: relative;
 }
@@ -74,7 +73,7 @@
     top: 35%;
     height: 350px;
     width: 50px;
-    background-color: rgb(88, 88, 88);
+    background-color: rgb(31, 31, 31);
     cursor: pointer;
     z-index: 80;
 }

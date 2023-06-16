@@ -46,9 +46,9 @@ export default function Scroll() {
             <div className="BottomStick Stick"></div>
         </div>
         <div className="ContentBox" style={{
-                opacity: content!==""? 1: 0,
-                transition: "opacity 1s ease-in"
-            }}>
+            opacity: content !== "" ? 1 : 0,
+            transition: "opacity 1s ease-in"
+        }}>
             <p className="ScrollContent">{content}</p>
         </div>
         <div className="ScrollRight Edge">

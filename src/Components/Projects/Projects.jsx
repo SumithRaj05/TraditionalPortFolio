@@ -154,7 +154,7 @@ export default function Projects() {
                         isActive={middleCard === 2}
                     />
                     <Card
-                        Title="Portfolio"
+                        Title="TraditionalPortfolio"
                         Tools={
                             <React.Fragment>
                                 <img src={react} alt="" className="ProjectIcons" />
@@ -169,7 +169,7 @@ export default function Projects() {
                             </React.Fragment>
                         }
                         demo={true}
-                        GitLink="https://github.com/SumithRaj05/PortFolio"
+                        GitLink="https://github.com/SumithRaj05/TraditionalPortFolio"
                         DemoLink="https://sumithraj-portfolio.netlify.app/"
                         isActive={middleCard === 3}
                     />

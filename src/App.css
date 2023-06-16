@@ -14,3 +14,7 @@ body{
 button{
   cursor: pointer;
 }
+
+.AboutSection,.ProjectsSection,.SkillsSection{
+  background: rgb(14, 14, 14);
+}
